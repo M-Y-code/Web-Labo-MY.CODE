@@ -1,7 +1,7 @@
 const Header = (props) => {
   return (
     <>
-      <h1>enta-</h1>
+      <h1>ヘッダー</h1>
       {props.children}
     </>
   );

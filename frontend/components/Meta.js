@@ -1,6 +1,5 @@
 const Meta = (props) => {
   const { title, discription } = props;
-  console.log(props);
 
   return (
     <>

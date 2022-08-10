@@ -1,0 +1,405 @@
+/*=================================================================
+フォントを記述
+=================================================================*/
+
+* {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    sans-serif;
+}
+
+@mixin header__nav_font {
+  font-weight: bold;
+  font-size: clamp(14px, 10px + 1vw, 16px);
+  color: #1b224c;
+  line-height: 1.8em;
+}
+
+@mixin item__time_font {
+  font-weight: normal;
+  font-size: clamp(10px, 7px + 1vw, 12px);
+  color: #1b224c;
+  line-height: 1.33em;
+}
+
+@mixin item__tel_font {
+  font-weight: bold;
+  font-size: clamp(12px, 9px + 1vw, 16px);
+  color: #1b224c;
+  line-height: 1.31em;
+}
+
+@mixin btn__a_font {
+  font-weight: bold;
+  font-size: clamp(12px, 8px + 1vw, 14px);
+  color: white;
+  line-height: 1.36em;
+}
+
+@mixin content__h1_font {
+  font-weight: bold;
+  font-size: clamp(40px, 37px + 1vw, 48px);
+  color: white;
+  line-height: 1.35em;
+  text-shadow: 0px 3px 6px black;
+}
+
+@mixin content__p_font {
+  font-weight: normal;
+  font-size: clamp(12px, 10px + 1vw, 18px);
+  color: white;
+  line-height: 1.33em;
+}
+
+@mixin btn__type3_font {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  line-height: 1.38em;
+}
+
+@mixin content__a_font {
+  font-weight: normal;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: white;
+  line-height: 1.31em;
+}
+
+@mixin worries__h1-h2_font {
+  font-weight: bold;
+  font-size: clamp(26px, 22px + 1vw, 36px);
+  color: white;
+  line-height: 1.39em;
+}
+
+@mixin box__p_font {
+  font-weight: normal;
+  font-size: clamp(12px, 8px + 1vw, 18px);
+  color: white;
+  line-height: 2.17em;
+}
+
+@mixin strengths__h1_font {
+  font-weight: bold;
+  font-size: clamp(30px, 26px + 1vw, 36px);
+  color: #1b224c;
+}
+
+@mixin comment__point_font {
+  font-weight: normal;
+  font-size: clamp(10px, 8px + 1vw, 12px);
+  color: white;
+}
+
+@mixin comment__h2_font {
+  font-weight: bold;
+  font-size: clamp(20px, 16px + 1vw, 26px);
+  color: #1b224c;
+}
+
+@mixin comment__p_font {
+  font-weight: normal;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: #1b224c;
+  line-height: 1.31em;
+}
+
+@mixin rateplan__h2_font {
+  font-weight: bold;
+  font-size: clamp(20px, 16px + 1vw, 26px);
+  color: white;
+}
+
+@mixin btn__type4_font {
+  font-weight: normal;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: white;
+}
+
+@mixin case__h1 {
+  font-weight: bold;
+  font-size: clamp(30px, 26px + 1vw, 36px);
+  color: white;
+}
+
+@mixin card__title {
+  font-weight: bold;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: white;
+  line-height: 1.8em;
+}
+
+@mixin prof__belongs-name-topix {
+  font-weight: normal;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: #1b224c;
+  line-height: 1.8em;
+}
+
+@mixin order__h1_font {
+  font-weight: bold;
+  font-size: clamp(30px, 26px + 1vw, 36px);
+  color: #1b224c;
+}
+
+@mixin li__No_font {
+  font-weight: bold;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: white;
+}
+
+@mixin li__title_font {
+  font-weight: bold;
+  font-size: clamp(12px, 6px + 1vw, 18px);
+  color: #1b224c;
+}
+
+@mixin li__com_font {
+  font-weight: normal;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: #1b224c;
+  line-height: 1.8em;
+}
+
+@mixin question__h1_font {
+  font-weight: bold;
+  font-size: clamp(30px, 26px + 1vw, 36px);
+  color: #1b224c;
+}
+
+@mixin question__qa_font {
+  font-weight: normal;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: #1b224c;
+}
+
+@mixin brog__h1 {
+  font-weight: bold;
+  font-size: clamp(28px, 24px + 1vw, 32px);
+  color: #1b224c;
+}
+
+@mixin content__category {
+  font-weight: normal;
+  font-size: clamp(10px, 6px + 1vw, 12px);
+  color: white;
+}
+
+@mixin commentbox__h3 {
+  font-weight: bold;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: #1b224c;
+  line-height: 1.31em;
+  text-decoration: underline;
+}
+
+@mixin commentbox__time {
+  font-weight: normal;
+  font-size: clamp(10px, 6px + 1vw, 12px);
+  color: #1b224c;
+}
+
+@mixin news__h1 {
+  font-weight: bold;
+  font-size: clamp(28px, 24px + 1vw, 32px);
+  color: #1b224c;
+}
+
+@mixin news__time {
+  font-weight: normal;
+  font-size: clamp(10px, 6px + 1vw, 12px);
+  color: #1b224c;
+}
+
+@mixin news__h3 {
+  font-weight: normal;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: #1b224c;
+  line-height: 1.69em;
+  text-decoration: underline;
+}
+
+@mixin req__h1 {
+  font-weight: bold;
+  font-size: clamp(28px, 24px + 1vw, 32px);
+  color: white;
+}
+
+@mixin btn__type5 {
+  font-weight: bold;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: white;
+}
+
+@mixin req_p {
+  font-weight: normal;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: white;
+  text-decoration: underline;
+}
+
+@mixin tel__p1 {
+  font-weight: bold;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: #1b224c;
+}
+
+@mixin tel__p2 {
+  font-weight: bold;
+  font-size: clamp(30px, 26px + 1vw, 36px);
+  color: #1b224c;
+}
+
+@mixin tel__p3 {
+  font-weight: normal;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: #1b224c;
+}
+
+@mixin footer__nav {
+  font-weight: bold;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: white;
+}
+
+@mixin footer__p1 {
+  font-weight: bold;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: white;
+}
+
+@mixin footer__p2 {
+  font-weight: normal;
+  font-size: clamp(10px, 6px + 1vw, 12px);
+  color: white;
+}
+
+@mixin footer__copy {
+  font-weight: bold;
+  font-size: clamp(10px, 6px + 1vw, 12px);
+  color: #1b224c;
+}
+
+@mixin h1 {
+  font-weight: bold;
+  font-size: clamp(28px, 24px + 1vw, 32px);
+  color: white;
+}
+
+@mixin h2 {
+  font-weight: bold;
+  font-size: clamp(28px, 24px + 1vw, 32px);
+  color: #1b224c;
+}
+
+@mixin h3 {
+  font-weight: bold;
+  font-size: clamp(12px, 8px + 1vw, 16px);
+  color: white;
+}
+
+@mixin h4 {
+  font-weight: bold;
+  font-size: clamp(24px, 20px + 1vw, 28px);
+  color: #1b224c;
+  line-height: 1.5em;
+}
+
+@mixin h5 {
+  font-weight: bold;
+  font-size: clamp(22px, 18px + 1vw, 26px);
+  color: #1b224c;
+  line-height: 1.5em;
+}
+
+@mixin h6 {
+  font-weight: bold;
+  font-size: clamp(18px, 14px + 1vw, 22px);
+  color: #1b224c;
+  line-height: 1.5em;
+}
+
+@mixin h7 {
+  font-weight: bold;
+  font-size: clamp(14px, 10px + 1vw, 18px);
+  color: #1b224c;
+  line-height: 1.5em;
+  text-decoration: underline;
+}
+
+@mixin h8 {
+  font-weight: bold;
+  font-size: clamp(18px, 14px + 1vw, 21px);
+  color: white;
+}
+
+@mixin h9 {
+  font-weight: bold;
+  font-size: clamp(10px, 6px + 1vw, 12px);
+  color: #1b224c;
+  line-height: 2em;
+  text-decoration: underline;
+}
+
+@mixin p1 {
+  font-weight: normal;
+  font-size: clamp(10px, 6px + 1vw, 12px);
+  color: #1b224c;
+}
+
+@mixin p2 {
+  font-weight: bold;
+  font-size: clamp(18px, 14px + 1vw, 22px);
+  color: white;
+}
+
+@mixin p3 {
+  font-weight: normal;
+  font-size: clamp(14px, 10px + 1vw, 16px);
+  color: #1b224c;
+  line-height: 1.5em;
+}
+
+@mixin p4 {
+  font-weight: bold;
+  font-size: clamp(20px, 16px + 1vw, 25px);
+  color: #1b224c;
+}
+
+@mixin p5 {
+  font-weight: bold;
+  font-size: clamp(14px, 10px + 1vw, 16px);
+  color: #1b224c;
+}
+
+@mixin p6 {
+  font-weight: normal;
+  font-size: clamp(10px, 6px + 1vw, 12px);
+  color: white;
+}
+
+@mixin p7 {
+  font-weight: bold;
+  font-size: clamp(14px, 10px + 1vw, 18px);
+  color: #f5a623;
+  text-decoration: underline;
+}
+
+@mixin p8 {
+  font-weight: normal;
+  font-size: clamp(14px, 10px + 1vw, 16px);
+  color: #1b224c;
+  line-height: 1.31em;
+}
+
+@mixin p9 {
+  font-weight: normal;
+  font-size: clamp(10px, 6px + 1vw, 12px);
+  color: #b4b4b4;
+}
+
+@mixin p10 {
+  font-weight: bold;
+  font-size: clamp(14px, 10px + 1vw, 16px);
+  color: #f5a623;
+  text-decoration: underline;
+}
